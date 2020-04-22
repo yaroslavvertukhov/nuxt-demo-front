@@ -1,34 +1,25 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxt-demo
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <main>
+      <first-block
+        :title="title"
+        :decription="decription"
+      />
+  </main>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import FirstBlock from '~/components/FirstBlock.vue'
 
 export default {
-  components: {
-    AppLogo
-  }
+    components: {
+        FirstBlock
+    },
+    data() {
+        return {
+            title: 'Светотехническое оборудование<br> в Петербурге',
+            decription: 'Продажа, аренда светотехнического оборудования.<br> Оформление официальных мероприятий под ключ.'
+        }
+    }
 }
 </script>
 
@@ -62,4 +53,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
