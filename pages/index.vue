@@ -1,23 +1,29 @@
 <template>
   <main>
       <first-block
-        :title="title"
-        :decription="decription"
+        :title="siteTitle"
+        :decription="siteDecription"
+      />
+      <slider-block
+        :title="sliderBlock"
       />
   </main>
 </template>
 
 <script>
 import FirstBlock from '~/components/FirstBlock.vue'
+import SliderBlock from '~/components/SliderBlock.vue'
 
 export default {
     components: {
-        FirstBlock
+        FirstBlock,
+        SliderBlock
     },
     data() {
         return {
-            title: 'Светотехническое оборудование<br> в Петербурге',
-            decription: 'Продажа, аренда светотехнического оборудования.<br> Оформление официальных мероприятий под ключ.'
+            siteTitle: 'Светотехническое оборудование<br> в Петербурге',
+            siteDecription: 'Продажа, аренда светотехнического оборудования.<br> Оформление официальных мероприятий под ключ.',
+            sliderBlock: 'Наши проекты',
         }
     }
 }
