@@ -1,5 +1,5 @@
 <template>
-    <section class="first-block">
+    <section class="first-block container">
         <div class="first-block__line">
         </div>
         <div class="first-block__info">

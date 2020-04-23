@@ -14,6 +14,10 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;500&display=swap' }
     ]
   },
+
+  css: [
+      '~/assets/style/main.sass'
+  ],
   /*
   ** Customize the progress bar color
   */
