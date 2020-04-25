@@ -18,6 +18,10 @@ module.exports = {
   css: [
       '~/assets/style/main.sass'
   ],
+
+  plugins: [
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' },
+  ],
   /*
   ** Customize the progress bar color
   */
