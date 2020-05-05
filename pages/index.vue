@@ -10,6 +10,7 @@
       />
       <main-catalog
         :title="titleCatalog"
+        :items="catalogElements"
       />
   </main>
 </template>
@@ -32,27 +33,69 @@ export default {
             sliderBlock: 'Наши проекты',
             mainSlides: [
               {
-                link: '/assets/images/sliders/1.jpg',
+                link: '/images/sliders/1.jpg',
                 title: 'ССК “ОЛИМП”',
                 decription: 'Световое оформление форума “Шубы-2019”'
               },
               {
-                link: '/assets/images/sliders/2.jpg',
+                link: '/images/sliders/2.jpg',
                 title: 'ССК “Молодец”',
                 decription: 'Музыкальное оформление форума “Шубы-2019” и Световое оформление форума “Шубы-2019”'
               },
               {
-                link: '/assets/images/sliders/1.jpg',
+                link: '/images/sliders/1.jpg',
                 title: 'Тест',
                 decription: 'Description Description'
               },
               {
-                link: '/assets/images/sliders/2.jpg',
+                link: '/images/sliders/2.jpg',
                 title: 'Title2',
                 decription: '111111111'
               }
             ],
-            titleCatalog: 'Каталог продукции'
+            titleCatalog: 'Каталог продукции',
+            catalogElements: [
+                {
+                    tabName: 'Robe',
+                    elements: [
+                        {
+                            id: 1,
+                            img: '/images/sliders/2.jpg',
+                            decription: 'Статичные светодиодные приборы'
+                        },
+                        {
+                            id: 2,
+                            img: '/images/sliders/2.jpg',
+                            decription: 'Контроллеры'
+                        },
+                        {
+                            id: 3,
+                            img: '/images/sliders/2.jpg',
+                            decription: 'Аксессуары'
+                        }
+                    ]
+                },
+                {
+                    tabName: 'Compulite',
+                    elements: [
+                        {
+                            id: 4,
+                            img: '/images/sliders/1.jpg',
+                            decription: 'Статичные светодиодные приборы'
+                        },
+                        {
+                            id: 5,
+                            img: '/images/sliders/1.jpg',
+                            decription: 'Контроллеры'
+                        },
+                        {
+                            id: 6,
+                            img: '/images/sliders/1.jpg',
+                            decription: 'Аксессуары'
+                        }
+                    ]
+                },
+            ]
         }
     }
 }
